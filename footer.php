@@ -27,6 +27,7 @@
 				printf( esc_html__( 'Theme: %1$s by %2$s.', 'pixaful' ), 'pixaful', '<a href="http://underscores.me/">Underscores.me</a>' );
 				?>
 		</div><!-- .site-info -->
+		footsy
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
