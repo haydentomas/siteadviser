@@ -3,16 +3,17 @@ get_header();
 ?>
 <div class="postgrid">
 
-<article>
+
 
 		<?php // Display blog posts on any page @ https://m0n.co/l
 		$temp = $wp_query; $wp_query= null;
 		$wp_query = new WP_Query(); $wp_query->query('posts_per_page=3' . '&paged='.$paged);
 		while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-		<?php the_post_thumbnail(); ?>
+		<article>
+		<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 		<h2><a href="<?php the_permalink(); ?>" title="Read more"><?php the_title(); ?></a></h2>
 		<?php the_excerpt(); ?>
-
+		</article>
 		<?php endwhile; ?>
 
 		<?php if ($paged > 1) { ?>
@@ -32,7 +33,7 @@ get_header();
 
 		<?php wp_reset_postdata(); ?>
 
-	</article>
+	
 </div>
 	
 <?php
