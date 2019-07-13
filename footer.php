@@ -12,7 +12,12 @@
 ?>
 
 	</div><!-- #content -->
-
+<div class="prefooter">
+	<div class="prelogo">logo</div>
+	<div class="pretext"><h2 class="h1">
+	If you want to take your website or application to the next level, we’ve got the experience to get you there. 
+	</h2></div>
+</div>
 	<footer>
 	<div class="footitem">
 	<h3>Pixaful &copy; 2019</h3>
