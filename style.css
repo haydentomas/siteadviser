@@ -826,6 +826,14 @@ embed, iframe, object {
   display: block; }
 
 /* Pixaful Edits */
+.postgrid {
+  padding: 0px 15% 0px 15%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "article article article"; }
+
 .prefooter {
   border-top: solid 1px #ccc;
   padding-top: 50px;
