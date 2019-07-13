@@ -51,6 +51,27 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+/* Webfont: Trenda-Regular */
+@font-face {
+  font-family: 'Trenda';
+  src: url("fonts/Trenda-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/Trenda-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Trenda-Regular.woff") format("woff"), url("fonts/Trenda-Regular.ttf") format("truetype"), url("fonts/Trenda-Regular.svg#Trenda-Regular") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; }
+
+/* Webfont: IBM Plex Serif */
+@font-face {
+  font-family: 'IBM Plex Serif', serif;
+  src: url("fonts/IBMPlexSerif-Regular.eot");
+  src: url("fonts/IBMPlexSerif-Regular.woff") format("woff"), url("fonts/IBMPlexSerif-Regular.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; }
+
 html {
   line-height: 1.15;
   /* 1 */
@@ -64,7 +85,8 @@ html {
    */
 body {
   margin: 0;
-  background: #e6e6e6; }
+  background: #fff;
+  font-family: 'IBM Plex Serif', serif; }
 
 /**
    * Correct the font size and margin on `h1` elements within `section` and
@@ -327,14 +349,15 @@ template, [hidden] {
   # Typography
   --------------------------------------------------------------*/
 body, button, input, select, optgroup, textarea {
-  color: #404040;
-  font-family: sans-serif;
-  font-size: 16px;
-  font-size: 1rem;
+  color: #333;
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 18px;
+  font-size: 1.1rem;
   line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  font-family: 'Trenda'; }
 
 p {
   margin-bottom: 1.5em; }
@@ -392,7 +415,7 @@ html {
     box-sizing: inherit; }
 
 body {
-  background: #e6e6e6;
+  background: #fff;
   /* Fallback for when there is no custom background color defined. */ }
 
 hr {
@@ -803,19 +826,20 @@ embed, iframe, object {
 
 /* Pixaful Edits */
 footer {
-  background: #3d3d41;
-  color: #fff;
+  padding: 0px 15% 0px 15%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "footitem footitem footitem"; }
-
-.footitem:nth-child(1) {
-  background: blue; }
-
-.footitem:nth-child(2) {
-  background: red; }
-
-.footitem:nth-child(3) {
-  background: green; }
+  grid-gap: 50px;
+  -ms-grid-columns: 2fr 50px 2fr 50px 1fr 50px 1fr;
+  grid-template-columns: 2fr 2fr 1fr 1fr;
+  grid-template-areas: "footitem footitem footitem footitem"; }
+  footer ul, footer ol {
+    margin: 0;
+    padding: 0;
+    font-size: 1.3rem;
+    color: #656776; }
+  footer p {
+    font-size: 1.3rem;
+    color: #656776; }
+  footer li {
+    list-style: none; }

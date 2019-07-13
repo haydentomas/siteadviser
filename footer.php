@@ -14,26 +14,32 @@
 	</div><!-- #content -->
 
 	<footer>
-	<div class="footitem">1</div>
-	<div class="footitem">2</div>
-	<div class="footitem">3</div>
-	</footer>
-	<div class="copyright">
-	<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'pixaful' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'pixaful' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'pixaful' ), 'pixaful', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-		
+	<div class="footitem">
+	<h3>Pixaful &copy; 2019</h3>
+	<p>90 Yerbury Road,<br/>Islington,London,<br/>N19 4RS</p>
+	<p><a href="#">Privacy Policy</a> - <a href="#">Terms</a></p>
 	</div>
+	<div class="footitem">
+		<h3>Join Our Community</h3>
+		<p>We'll help you become a better creative with articles, resources, & behind-the-scenes content delivered straight to your inbox. </p>
+		<p><a href="#">Sign up today</a></p>
+	</div>
+	<div class="footitem">
+		<h3>Get Social</h3>
+		<ul>
+			<li><a href="#">Facebook</a></li>
+			<li><a href="#">Instagram</a></li>
+		</ul>
+	</div>
+	<div class="footitem">
+	<h3>Contact Us</h3>
+	<ul>
+			<li><a href="#">hello@pixaful.com</a></li>
+			<li><a href="#">07803 501 235</a></li>
+		</ul>
+	</div>
+	</footer>
+	
 </div>
 
 <?php wp_footer(); ?>
