@@ -13,8 +13,13 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
+	<footer>
+	<div class="footitem">1</div>
+	<div class="footitem">2</div>
+	<div class="footitem">3</div>
+	</footer>
+	<div class="copyright">
+	<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'pixaful' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
@@ -27,9 +32,9 @@
 				printf( esc_html__( 'Theme: %1$s by %2$s.', 'pixaful' ), 'pixaful', '<a href="http://underscores.me/">Underscores.me</a>' );
 				?>
 		</div><!-- .site-info -->
-		footsy
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+		
+	</div>
+</div>
 
 <?php wp_footer(); ?>
 

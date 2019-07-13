@@ -803,11 +803,19 @@ embed, iframe, object {
 
 /* Pixaful Edits */
 footer {
-  background: pink;
-  padding-left: 15%;
-  padding-right: 15%;
+  background: #3d3d41;
+  color: #fff;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "foot foot foot"; }
+  grid-template-areas: "footitem footitem footitem"; }
+
+.footitem:nth-child(1) {
+  background: blue; }
+
+.footitem:nth-child(2) {
+  background: red; }
+
+.footitem:nth-child(3) {
+  background: green; }
