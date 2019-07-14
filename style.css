@@ -866,6 +866,20 @@ a, a:visited {
   text-decoration: none;
   color: #1581e6; }
 
+.testimonial {
+  display: -ms-grid;
+  display: grid;
+  margin: 0px 15% 0px 15%;
+  background: #fff9e5;
+  padding: 100px; }
+  .testimonial h2 {
+    margin: 0; }
+  .testimonial p {
+    font-size: 2.1rem;
+    line-height: 2.65rem;
+    color: #23273c;
+    text-align: center; }
+
 .postgrid {
   padding: 0px 15% 0px 15%;
   display: -ms-grid;
