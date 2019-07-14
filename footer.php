@@ -15,7 +15,7 @@
 <div class="prefooter">
 	<div class="prelogo">logo</div>
 	<div class="pretext">
-		<h2 class="h1">
+		<h2 class="bold h1">
 			If you want to take your website or application to the next level, we’ve got the experience to get you
 			there.
 		</h2>

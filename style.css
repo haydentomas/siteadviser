@@ -62,6 +62,39 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   font-weight: normal;
   text-rendering: optimizeLegibility; }
 
+/* Webfont: Trenda-Bold */
+@font-face {
+  font-family: 'TrendaBold';
+  src: url("fonts/Trenda-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/Trenda-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Trenda-Bold.woff") format("woff"), url("fonts/Trenda-Bold.ttf") format("truetype"), url("fonts/Trenda-Bold.svg#Trenda-Bold") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; }
+
+/* Webfont: Trenda-BoldIt */
+@font-face {
+  font-family: 'TrendaBoldIt';
+  src: url("fonts/Trenda-BoldIt.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/Trenda-BoldIt.eot?#iefix") format("embedded-opentype"), url("fonts/Trenda-BoldIt.woff") format("woff"), url("fonts/Trenda-BoldIt.ttf") format("truetype"), url("fonts/Trenda-BoldIt.svg#Trenda-BoldIt") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; }
+
+/* Webfont: Trenda-Semibold */
+@font-face {
+  font-family: 'TrendaSemibold';
+  src: url("fonts/Trenda-Semibold.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/Trenda-Semibold.eot?#iefix") format("embedded-opentype"), url("fonts/Trenda-Semibold.woff") format("woff"), url("Trenda-Semibold.ttf") format("truetype"), url("fonts/Trenda-Semibold.svg#Trenda-Semibold") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; }
+
 /* Webfont: IBM Plex Serif */
 @font-face {
   font-family: 'IBM Plex Serif', serif;
@@ -358,7 +391,10 @@ body, button, input, select, optgroup, textarea {
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  font-family: 'Trenda'; }
+  font-family: 'TrendaSemibold'; }
+
+.bold {
+  font-family: 'TrendaBold'; }
 
 p {
   margin-bottom: 1.5em; }
@@ -834,6 +870,14 @@ embed, iframe, object {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "article article article"; }
 
+.postgrid ul {
+  display: inline-block;
+  padding: 0;
+  margin: 0; }
+
+.postgrid li {
+  display: inline; }
+
 .prefooter {
   border-top: solid 1px #ccc;
   padding-top: 50px;
@@ -854,7 +898,7 @@ embed, iframe, object {
     color: #656776; }
 
 footer {
-  padding: 0px 15% 0px 15%;
+  padding: 0px 15% 100px 15%;
   display: -ms-grid;
   display: grid;
   grid-gap: 50px;
