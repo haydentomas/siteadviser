@@ -862,6 +862,10 @@ embed, iframe, object {
   display: block; }
 
 /* Pixaful Edits */
+a, a:visited {
+  text-decoration: none;
+  color: #1581e6; }
+
 .postgrid {
   padding: 0px 15% 0px 15%;
   display: -ms-grid;
@@ -876,10 +880,17 @@ embed, iframe, object {
   .postgrid ul {
     display: inline-block;
     padding: 0;
-    margin-left: 10px;
+    margin-left: 5px;
     margin-bottom: 0; }
   .postgrid li {
     display: inline; }
+  .postgrid img {
+    margin-bottom: 10px; }
+
+h4.para {
+  font-weight: normal; }
+  h4.para a {
+    color: grey; }
 
 .prefooter {
   border-top: solid 1px #ccc;
