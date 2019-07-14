@@ -207,3 +207,15 @@ function disable_emojis() {
    
    return $urls;
    }
+
+
+   function pixaful_post_types() {
+	register_post_type('testimonial', array(
+		'public' => true,
+		'labels' => array(
+		'name' => 'Testimonials'
+		),
+		'menu_icon' => 'dashicons-star-half'
+	));
+   }
+   add_action('init', 'pixaful_post_types');
