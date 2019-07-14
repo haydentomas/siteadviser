@@ -10,7 +10,7 @@ get_header();
 		$wp_query = new WP_Query(); $wp_query->query('posts_per_page=3' . '&paged='.$paged);
 		while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 		<article>
-		<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+		<a href="<?php the_permalink(); ?>"><div class="img-hover-zoom--slowmo"><?php the_post_thumbnail(); ?></div></a>
 		<h4 class="para">Found in: <?php the_category(); ?></h4>
 		<h2><a href="<?php the_permalink(); ?>" title="Read more"><?php the_title(); ?></a></h2>
 	
