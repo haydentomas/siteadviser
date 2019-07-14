@@ -869,14 +869,17 @@ embed, iframe, object {
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "article article article"; }
-
-.postgrid ul {
-  display: inline-block;
-  padding: 0;
-  margin-left: 10px; }
-
-.postgrid li {
-  display: inline; }
+  .postgrid h4 {
+    margin: 0; }
+  .postgrid h2 {
+    margin: 0; }
+  .postgrid ul {
+    display: inline-block;
+    padding: 0;
+    margin-left: 10px;
+    margin-bottom: 0; }
+  .postgrid li {
+    display: inline; }
 
 .prefooter {
   border-top: solid 1px #ccc;
