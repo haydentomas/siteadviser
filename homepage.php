@@ -1,7 +1,7 @@
 <?php /* Template Name: Home */ 
 get_header();
 ?>
-<div class="testimonial">
+
 <?php
   $args = array(
     'post_type'=>'testimonials', 
@@ -13,24 +13,24 @@ get_header();
 
   while ($testimonials->have_posts()) : $testimonials->the_post(); 
 ?>
-    <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+<div class="testimonial">
 	<?php the_excerpt(); // or the_content(); ?>
 	<?php the_post_thumbnail(); ?>
 	<?php the_field( 'name' ); ?>
 	<a href="<?php the_field( 'website_address' ); ?>" target="_blank"><?php the_field( 'url_display' ); ?></a>
-
+</div>
 <?php 
   endwhile;
   wp_reset_postdata();
 ?>
-</div>
+
 <div class="postgrid">
 		<?php // Display blog posts on any page @ https://m0n.co/l
 		$temp = $wp_query; $wp_query= null;
 		$wp_query = new WP_Query(); $wp_query->query('posts_per_page=3' . '&paged='.$paged);
 		while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 		<article>
-		<a href="<?php the_permalink(); ?>"><div class="img-hover-zoom--slowmo"><?php the_post_thumbnail(); ?></div></a>
+		<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 		<h4 class="para">Found in: <?php the_category(); ?></h4>
 		<h2><a href="<?php the_permalink(); ?>" title="Read more"><?php the_title(); ?></a></h2>
 	
