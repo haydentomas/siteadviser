@@ -872,7 +872,7 @@ a, a:visited {
   margin: 0px 15% 0px 15%;
   grid-template-areas: "excerpt";
   background: #fff9e5;
-  padding: 100px; }
+  padding: 50px 100px 50px 100px; }
   .testimonial h2 {
     margin: 0; }
   .testimonial p {
