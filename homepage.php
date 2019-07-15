@@ -20,8 +20,8 @@ get_header();
 
 <div class="pitem">
 <div class="excerpt">
-	<?php the_post_thumbnail(); ?>
-	<h2><?php the_title(); // or the_content(); ?></h2>
+<a href="<?php the_field( 'page_url' ); ?>"><?php the_post_thumbnail(); ?></a>
+	<h2><a href="<?php the_field( 'page_url' ); ?>"><?php the_title(); // or the_content(); ?></a></h2>
 	<?php the_excerpt(); // or the_content(); ?> <a href="<?php the_field( 'page_url' ); ?>">View project...</a>
 	
 	</div>
