@@ -14,10 +14,19 @@ get_header();
   while ($testimonials->have_posts()) : $testimonials->the_post(); 
 ?>
 <div class="testimonial">
+	<div class="excerpt">
 	<?php the_excerpt(); // or the_content(); ?>
+	</div>
+<div class="details">
+<div class="author">
 	<?php the_post_thumbnail(); ?>
-	<?php the_field( 'name' ); ?>
-	<a href="<?php the_field( 'website_address' ); ?>" target="_blank"><?php the_field( 'url_display' ); ?></a>
+	</div>
+	<div class="details">
+	<p><?php the_field( 'name' ); ?></p>
+	<p><a href="<?php the_field( 'website_address' ); ?>" target="_blank"><?php the_field( 'url_display' ); ?></a></p>
+	</div>
+</div>
+	
 </div>
 <?php 
   endwhile;

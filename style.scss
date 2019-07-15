@@ -1100,8 +1100,45 @@ a,a:visited {
   color:rgb(21, 129, 230);
 }
 
+
+
+.testimonial {
+  display:grid;
+  margin:0px 15% 0px 15%;
+  grid-template-areas:
+  "excerpt";
+background:#fff9e5;
+padding:100px;
+h2 {
+  margin:0;
+}
+p {
+  font-size: 2.1rem;
+line-height: 2.65rem;
+color: #23273c;
+text-align:center;
+
+}
+}
+.details {
+  display:grid;
+  justify-content:center;
+
+  p {
+    font-size:1.1em;
+    line-height:1.1em;
+    margin:0;
+  }
+
+  .author {
+  display:grid;
+  justify-content:center;
+  margin-bottom:15px;
+  }
+}
+    
   .postgrid {
-    padding:0px 15% 0px 15%;
+    padding:0px 13% 0px 13%;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
@@ -1123,6 +1160,10 @@ a,a:visited {
     }
     img {
       margin-bottom:10px;
+    }
+
+    article {
+      margin: 0 auto;
     }
 
   }

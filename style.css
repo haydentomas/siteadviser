@@ -870,6 +870,7 @@ a, a:visited {
   display: -ms-grid;
   display: grid;
   margin: 0px 15% 0px 15%;
+  grid-template-areas: "excerpt";
   background: #fff9e5;
   padding: 100px; }
   .testimonial h2 {
@@ -880,8 +881,26 @@ a, a:visited {
     color: #23273c;
     text-align: center; }
 
+.details {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .details p {
+    font-size: 1.1em;
+    line-height: 1.1em;
+    margin: 0; }
+  .details .author {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 15px; }
+
 .postgrid {
-  padding: 0px 15% 0px 15%;
+  padding: 0px 13% 0px 13%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -900,6 +919,8 @@ a, a:visited {
     display: inline; }
   .postgrid img {
     margin-bottom: 10px; }
+  .postgrid article {
+    margin: 0 auto; }
 
 h4.para {
   font-weight: normal; }
