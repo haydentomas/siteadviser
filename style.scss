@@ -1100,7 +1100,17 @@ a,a:visited {
   color:rgb(21, 129, 230);
 }
 
+.portfolio {
 
+  display:grid;
+  margin:0px 15% 0px 15%;
+  grid-template-columns:1fr 1fr;
+  grid-gap:50px;
+  margin-bottom:20px;
+  grid-template-areas:
+  "pitem pitem";
+
+}
 
 .testimonial {
   display:grid;
@@ -1108,7 +1118,7 @@ a,a:visited {
   grid-template-areas:
   "excerpt";
 background:#fff9e5;
-padding:100px;
+padding:50px 100px 50px 100px;
 h2 {
   margin:0;
 }

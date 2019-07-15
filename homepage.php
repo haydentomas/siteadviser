@@ -2,6 +2,43 @@
 get_header();
 ?>
 
+
+
+<div class="portfolio">
+
+<?php
+  $args = array(
+    'post_type'=>'Portfolio', 
+    'orderby'=>'rand', 
+    'posts_per_page'=>'2'
+  );
+
+  $testimonials=new WP_Query($args);
+
+  while ($testimonials->have_posts()) : $testimonials->the_post(); 
+?>
+
+<div class="pitem">
+<div class="excerpt">
+	<h2><?php the_title(); // or the_content(); ?></h2>
+	<?php the_excerpt(); // or the_content(); ?>
+	<?php the_post_thumbnail(); ?>
+	</div>
+
+</div>
+	
+
+<?php 
+  endwhile;
+  wp_reset_postdata();
+?>
+</div>
+
+
+
+
+
+
 <?php
   $args = array(
     'post_type'=>'testimonials', 
